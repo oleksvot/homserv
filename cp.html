@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>HomServ | loading</title>
+	<link href="web/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link href="web/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="maindiv">
+<div class="top">
+		<div style="float: left"><img src="web/homserv.gif" alt="HomServ"/></div>
+		<div style="float: none" align="right">
+			<a href="http://localhost/cp/go.php">Control panel</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://t.me/oleksvot">Telegram</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://homserv.net/">HomServ website</a>
+		</div>
+	</div>
+<div class="content"><div class="zag"><a href="http://localhost/cp/go.php" style="text-decoration: none; color: #0000FF;">Continue...</a></div><br>
+<div id="i"></div>
+<script language="JavaScript">
+function up() {
+	document.getElementById("i").innerHTML='<iframe src="http://localhost/cp/restart.php?mode=check&goto=http://localhost/cp/go.php" style="visibility: hidden;"/>';
+	window.setTimeout('up()', 500);
+}
+window.setTimeout('up()', 1);
+</script>
+</div>
+<div class="botton">&copy; 2007-2024 Oleksandr Titarenko</div>
+</div>
+</body>
+</html>
